@@ -2,7 +2,7 @@ require "test_helper"
 
 class FlavorsControllerTest < ActionDispatch::IntegrationTest
   test "index" do
-    get/ "flavors.json"
+    get "/flavors.json"
     assert_response 200
 
     data = json.parse(response.body)
